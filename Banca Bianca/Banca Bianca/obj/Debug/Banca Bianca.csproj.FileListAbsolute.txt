@@ -1,0 +1,142 @@
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.dll.config
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.pdb
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.exe
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.exe.config
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.rsp
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.exe
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.exe.config
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.rsp
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.AppContext.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Collections.Immutable.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Console.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Compression.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.FileSystem.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Pipes.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Reflection.Metadata.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.AccessControl.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Claims.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.ValueTuple.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XPath.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.exe
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.exe.config
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.rsp
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\VBCSCompiler.exe
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\VBCSCompiler.exe.config
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Antlr3.Runtime.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\AspNet.ScriptManager.jQuery.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.Web.Infrastructure.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Newtonsoft.Json.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\System.Web.Optimization.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\WebGrease.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\System.Web.Optimization.xml
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Newtonsoft.Json.xml
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Antlr3.Runtime.pdb
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csprojAssemblyReference.cache
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csproj.CoreCompileInputs.cache
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csproj.CopyComplete
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.dll
+E:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.pdb
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.dll.config
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Banca Bianca.pdb
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.exe
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.exe.config
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csc.rsp
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.exe
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.exe.config
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\csi.rsp
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.AppContext.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Collections.Immutable.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Console.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Compression.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.FileSystem.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.IO.Pipes.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Reflection.Metadata.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.AccessControl.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Claims.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.ValueTuple.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XPath.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.exe
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.exe.config
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\vbc.rsp
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\VBCSCompiler.exe
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\roslyn\VBCSCompiler.exe.config
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Antlr3.Runtime.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\AspNet.ScriptManager.bootstrap.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\AspNet.ScriptManager.jQuery.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.ScriptManager.WebForms.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.Web.Infrastructure.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Newtonsoft.Json.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\System.Web.Optimization.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\WebGrease.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\System.Web.Optimization.xml
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Newtonsoft.Json.xml
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Antlr3.Runtime.pdb
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csprojAssemblyReference.cache
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csproj.CoreCompileInputs.cache
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.csproj.CopyComplete
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.dll
+F:\Zavrsni projekat Bankarski Kredit\Banca Bianca\Banca Bianca\obj\Debug\Banca Bianca.pdb
