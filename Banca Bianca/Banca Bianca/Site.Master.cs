@@ -11,7 +11,18 @@ namespace Banca_Bianca
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            admin2.Visible = false;
+            zaposleni.Visible = false;
+            moji_krediti.Visible = false;
+            if (Session["tip"].ToString() == "A") { admin2.Visible = true;
+                //Response.Redirect("Admin2.aspx");
+            }
+            if (Session["tip"].ToString() == "Z") { zaposleni.Visible = true;
+                //Response.Redirect("Zaposleni.aspx");
+            }
+            if (Session["tip"].ToString() == "K") { moji_krediti.Visible = true;
+                //Response.Redirect("Moji_krediti.aspx");
+            }
         }
     }
 }

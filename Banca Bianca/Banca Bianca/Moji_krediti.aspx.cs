@@ -13,15 +13,35 @@ namespace Banca_Bianca
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            SqlConnection conn = Konekcija.Connect();
-            SqlDataAdapter da = new SqlDataAdapter("select * from Kontakti", conn);
-            
-            DataTable podaci = new DataTable();
-            da.Fill(podaci);
 
-            GridView1.DataSource = podaci;
-            GridView1.DataBind();
+            if (Session["tip"].ToString() != "K")
+            {
+                //Response.Redirect("Login.aspx");
+                Response.Write("Nemate ovlascenje za ovu stranicu!");
+                Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+
+            }
+            else if (Session["tip"].Equals("K"))
+            {
+
+                SqlConnection conn = Konekcija.Connect();
+                SqlDataAdapter da = new SqlDataAdapter("select * from Kontakti", conn);
+
+                DataTable podaci = new DataTable();
+                da.Fill(podaci);
+
+                GridView1.DataSource = podaci;
+                GridView1.DataBind();
+                odgovor.Visible = false;
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+           
+
+
         }
     }
 }

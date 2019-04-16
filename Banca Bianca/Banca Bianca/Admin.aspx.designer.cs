@@ -10,6 +10,6 @@
 namespace Banca_Bianca {
     
     
-    public partial class Admin {
+    public partial class Admin2 {
     }
 }

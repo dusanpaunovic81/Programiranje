@@ -4,13 +4,18 @@
     <h2><%: Title %>.</h2>
     <h2>O nama...</h2>
    
-   <body>
+   
     <div>
-        <form action="/action_page.php">
-            <input type="text" placeholder="Username" name="username">
+        <!--  <form action="/action_page.php">  -->
+            <%--<input type="text" placeholder="Username" name="username">
             <input type="password" placeholder="Password" name="psw">
-            <input type="submit" value="Uloguj se" class="btn btn-primary btn-lg" onclick="proveraPodataka()">
-        </form>
+            <input type="submit" value="Uloguj se" class="btn btn-primary btn-lg" onclick="proveraPodataka()">--%>
+      <%--  </form>--%>
+        <asp:Label ID="Label1" runat="server" Text="Username:"></asp:Label>
+        <asp:TextBox ID="TextBox1" runat="server" placeholder="Username"></asp:TextBox>
+        <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" placeholder="Password"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" Text="Uloguj se" OnClick="Button1_Click" class="btn btn-primary btn-lg" />
     </div>
-</body>
+
 </asp:Content>

@@ -105,9 +105,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Zaposleni.aspx" />
+    <Content Include=".gitignore" />
     <Content Include="Admin.aspx" />
+    <Content Include="Admin2.aspx" />
+    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Scripts\JavaScript.js" />
+    <Content Include="Upis_novog_kredita.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Zaposleni.aspx" />
     <Content Include="Moji_krediti.aspx" />
+    <Content Include="Zaposleni_pregled_kredita.aspx" />
     <Content Include="Zaposlenje_i_karijera.aspx" />
     <Content Include="Registracija.aspx" />
     <Content Include="Login.aspx" />
@@ -167,14 +175,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Konekcija.cs" />
-    <Compile Include="Zaposleni.aspx.cs">
-      <DependentUpon>Zaposleni.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Zaposleni.aspx.designer.cs">
-      <DependentUpon>Zaposleni.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,12 +182,55 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin2.aspx.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin2.aspx.designer.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Konekcija.cs" />
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upis_novog_kredita.aspx.cs">
+      <DependentUpon>Upis_novog_kredita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upis_novog_kredita.aspx.designer.cs">
+      <DependentUpon>Upis_novog_kredita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zaposleni.aspx.cs">
+      <DependentUpon>Zaposleni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zaposleni.aspx.designer.cs">
+      <DependentUpon>Zaposleni.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Moji_krediti.aspx.cs">
       <DependentUpon>Moji_krediti.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Moji_krediti.aspx.designer.cs">
       <DependentUpon>Moji_krediti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zaposleni_pregled_kredita.aspx.cs">
+      <DependentUpon>Zaposleni_pregled_kredita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Zaposleni_pregled_kredita.aspx.designer.cs">
+      <DependentUpon>Zaposleni_pregled_kredita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Zaposlenje_i_karijera.aspx.cs">
       <DependentUpon>Zaposlenje_i_karijera.aspx</DependentUpon>

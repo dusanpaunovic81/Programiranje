@@ -1,8 +1,4 @@
-﻿<%@ Page Title="Admin" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Banca_Bianca.Admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Admin.aspx.cs" Inherits="Banca_Bianca.Admin2" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h2>Admin vidi sve!!!</h2>
-   
-    
-</asp:Content>
+<%--<asp:GridView ID="GridView1" runat="server"></asp:GridView>--%>
+  

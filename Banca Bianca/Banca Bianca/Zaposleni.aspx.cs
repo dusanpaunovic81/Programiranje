@@ -15,30 +15,35 @@ namespace Banca_Bianca
       
         protected void Page_Load(object sender, EventArgs e)
         {
+ if (Session["tip"].ToString() != "Z")
+            {
+                Response.Redirect("Login.aspx");
+                Response.Write("Nemate ovlascenje za ovu stranicu!");
+                Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
-          //  if (Session["korisnik"].ToString() == "")
-            {
-           //     Response.Redirect("Login.aspx");
             }
-            SqlConnection conn = Konekcija.Connect();
-            SqlCommand komanda = new SqlCommand("select * from Kontakti", conn);
-            conn.Open();
-            SqlDataReader citac = komanda.ExecuteReader();
-            while (citac.Read())
+            else if (Session["tip"].Equals("Z"))
             {
-                TableRow TR = new TableRow();
-                if (citac[2].ToString().Length != 0)
-                {
-                    for (int i = 0; i < citac.FieldCount; i++)
-                    {
-                        TableCell TD = new TableCell();
-                        TD.Text = citac[i].ToString();
-                        TR.Cells.Add(TD);
-                    }
-                   Table1.Rows.Add(TR);
-                }
+
+                SqlConnection conn = Konekcija.Connect();
+                SqlDataAdapter da = new SqlDataAdapter("select * from Kontakti", conn);
+
+                DataTable podaci = new DataTable();
+                da.Fill(podaci);
+
+                GridView1.DataSource = podaci;
+                GridView1.DataBind();
             }
-            conn.Close();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Upis_novog_kredita.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Zaposleni_pregled_kredita.aspx"); 
         }
     }
 }
