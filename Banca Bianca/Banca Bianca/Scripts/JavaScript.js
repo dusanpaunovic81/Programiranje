@@ -17,3 +17,19 @@ function proveriLozinku() {
         document.getElementById("lozinka1").style.backgroundColor = "#84e184";
     }
 }
+
+//function proveriemail(){
+//    //var uzorakEmail = /^\w+([\.-]?\w+)*@\w+([\.]?\w+)*\.[a-zA-Z]{2,3}$/;
+//    var uzorakEmail = /^[dusan]$/;
+//    //document.getElementById("email").style.backgroundColor = "#84e184";
+//    //if (email == "") {
+//    //    alert("Niste uneli E-mail adresu!");
+//    //    document.getElementById("email").focus();
+//    //    document.getElementById("email").style.backgroundColor = "#ffb3b3";
+//    //}
+//    if (!uzorakEmail.test(email)) {
+//        //alert("E-mail adresa nije u dobrom formatu!");
+//        document.getElementById("email").style.backgroundColor = "#ffb3b3";
+//    }
+//    else document.getElementById("email").style.backgroundColor = "#84e184";
+//}

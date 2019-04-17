@@ -54,6 +54,7 @@ namespace Banca_Bianca
                     Session["ime"] = korisnik.Rows[0]["Korisnicko_ime"].ToString();
                     Session["Last_date"] = korisnik.Rows[0]["login_date"].ToString();
                     Session["Last_time"] = korisnik.Rows[0]["login_time"].ToString();
+                    Session["id_zaposlenog"] = korisnik.Rows[0]["Id_racuna"].ToString();
 
                     //upisi u SQL podatke o logovanju time, date, korisnik...
                     SqlConnection conn = Konekcija.Connect();

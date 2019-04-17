@@ -111,8 +111,8 @@
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Logout.aspx" />
     <Content Include="Scripts\JavaScript.js" />
-    <Content Include="Upis_novog_kredita.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="Upis_novog_kredita1.aspx" />
     <Content Include="Zaposleni.aspx" />
     <Content Include="Moji_krediti.aspx" />
     <Content Include="Zaposleni_pregled_kredita.aspx" />
@@ -197,19 +197,19 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Upis_novog_kredita.aspx.cs">
-      <DependentUpon>Upis_novog_kredita.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Upis_novog_kredita.aspx.designer.cs">
-      <DependentUpon>Upis_novog_kredita.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upis_novog_kredita1.aspx.cs">
+      <DependentUpon>Upis_novog_kredita1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upis_novog_kredita1.aspx.designer.cs">
+      <DependentUpon>Upis_novog_kredita1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Zaposleni.aspx.cs">
       <DependentUpon>Zaposleni.aspx</DependentUpon>

@@ -20,6 +20,12 @@ namespace Banca_Bianca
         protected void Session_Start(object sender, EventArgs e)
         {
             Session["tip"] = "";
+            Session["Kontakti"] = "";
+            Session["ime"] = "";
+            Session["Last_date"] = "";
+            Session["Last_time"] = "";
+            Session["id_zaposlenog"] = "";
+            Session["id_klijenta"] = "";
         }
 
     }

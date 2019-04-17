@@ -12,10 +12,10 @@ namespace Banca_Bianca
 {
     public partial class Zaposleni : Page
     {
-      
+
         protected void Page_Load(object sender, EventArgs e)
         {
- if (Session["tip"].ToString() != "Z")
+            if (Session["tip"].ToString() != "Z")
             {
                 Response.Redirect("Login.aspx");
                 Response.Write("Nemate ovlascenje za ovu stranicu!");
@@ -38,12 +38,12 @@ namespace Banca_Bianca
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Upis_novog_kredita.aspx");
+            Response.Redirect("Upis_novog_kredita1.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Zaposleni_pregled_kredita.aspx"); 
+            Response.Redirect("Zaposleni_pregled_kredita.aspx");
         }
     }
 }

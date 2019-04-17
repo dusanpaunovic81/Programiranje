@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h2>O nama...</h2>
+    <h2>Stranica za logovanje</h2>
    
    
     <div>
