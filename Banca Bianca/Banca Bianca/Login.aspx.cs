@@ -17,7 +17,7 @@ namespace Banca_Bianca
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Session.Abandon();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

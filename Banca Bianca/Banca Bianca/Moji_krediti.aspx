@@ -3,15 +3,15 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" type="text/css" href="Content/StyleSheet1.css"/>
    
-    <h2><%: Title %>
+    <h2><%: Title %></h2>
         <asp:Label ID="Label1" runat="server" Text="Unesite JMBG"></asp:Label>
         .<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Proveri" />
-        <asp:GridView ID="GridView2" runat="server">
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" class="btn btn-primary btn-lg" Text="Proveri" Height="55px" Width="136px" />
+        <asp:GridView ID="GridView2" runat="server" >
         </asp:GridView>
-        <asp:DropDownList ID="DropDownList1" runat="server">
-        </asp:DropDownList>
-    </h2>
+       <%-- <asp:DropDownList ID="DropDownList1" class="GridView1" runat="server">
+        </asp:DropDownList>--%>
+    
 
     <div id="odgovor" runat="server"></div>
 

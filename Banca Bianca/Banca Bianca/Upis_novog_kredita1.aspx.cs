@@ -38,7 +38,7 @@ namespace Banca_Bianca
             da.Fill(korisnik);
             if (korisnik.Rows.Count != 0) {
                 Session["id_klijenta"] = korisnik.Rows[0][0].ToString();
-                string naredba1 = "select Naziv_proizvoda, Id_proizvoda,Kamata2 FROM Proizvodi";
+                string naredba1 = "select Naziv_proizvoda, Id_proizvoda,Kamata FROM Proizvodi";
                 SqlDataAdapter da1 = new SqlDataAdapter(naredba1, Konekcija.Connect());
                 DataTable proizvodi = new DataTable();
                 da1.Fill(proizvodi);

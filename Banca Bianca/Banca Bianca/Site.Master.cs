@@ -14,6 +14,10 @@ namespace Banca_Bianca
             admin2.Visible = false;
             zaposleni.Visible = false;
             moji_krediti.Visible = false;
+            if (Session["tip"] != null)
+            {
+
+            
             if (Session["tip"].ToString() == "A") { admin2.Visible = true;
                 //Response.Redirect("Admin2.aspx");
             }
@@ -22,6 +26,7 @@ namespace Banca_Bianca
             }
             if (Session["tip"].ToString() == "K") { moji_krediti.Visible = true;
                 //Response.Redirect("Moji_krediti.aspx");
+            }
             }
         }
     }

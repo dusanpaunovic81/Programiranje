@@ -10,7 +10,7 @@
         <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-lg" OnClick="Button1_Click" Text="Upis novog kredita" />
         <asp:Button ID="Button2" runat="server" class="btn btn-primary btn-lg" Text="Pregled kredita" OnClick="Button2_Click" />
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
   Uplatnica
 </button>
 

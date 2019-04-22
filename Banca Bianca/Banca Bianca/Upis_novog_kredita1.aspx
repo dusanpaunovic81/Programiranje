@@ -25,5 +25,5 @@
     <asp:Label ID="Label9" runat="server" Text="Mesečna rata:"></asp:Label>
     <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br /><br />
     <asp:Button ID="Button3" runat="server" class="btn btn-primary btn-lg" Text="Odobri" OnClick="Button3_Click" />
-    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox9" runat="server" Width="301px"></asp:TextBox>
 </asp:Content>

@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Banca Bianca</title>
-    <%--<link href="Content/StyleSheet1.css" rel="stylesheet" />--%>
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -34,7 +34,7 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-          
+
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
@@ -66,12 +66,10 @@
                             {%>
                         <li><a runat="server" href="~/Login">Login</a></li>
                         <li><a runat="server" href="~/Registracija">Registracija</a></li>
-                        <%}
-                        else
-                        {%>
+                        <%}else{ %>
                         <li><p style="color:aqua; padding-top:15px">Ulogovan: <%=Session["ime"] %> </p></li>
                         <li><a runat="server" href="~/Logout">(Logout)</a></li>
-                        <%} %>
+                        <% }%>
                     </ul>
                 </div>
             </div>
