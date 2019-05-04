@@ -27,12 +27,5 @@
     <asp:Button ID="Button3" runat="server" class="btn btn-primary btn-lg" Text="Odobri" OnClick="Button3_Click" />
     <div id="odobren" runat="server"></div>
 
-   <%-- <script src="Scripts/JavaScript.js"></script>
-    <script src="Scripts/jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            
-
-        })
-    </script>--%>
+ 
 </asp:Content>

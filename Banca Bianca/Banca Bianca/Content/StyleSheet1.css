@@ -1,6 +1,8 @@
-﻿/*body {
-    color:yellow;
-}*/
+﻿body {
+    background-image: url('`/003.jpg');
+    /*background-image: url('https: //wallpapercave.com/wp/JS7h9hM.jpg');*/
+    /* color:yellow;*/
+}
 label{
     font-weight:bold;
 }

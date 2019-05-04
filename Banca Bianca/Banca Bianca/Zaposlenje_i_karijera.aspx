@@ -21,7 +21,7 @@
             Zakoračite u svet mogućeg.<br />
         </div>
        
-        <div>
+       <%-- <div>
             <form method="post" name="formaReg">
                 <div class="h1 text-center bg-primary text-light jumbotron rounded shadow-lg ">Aplicirajte za posao</div>
                 <div class="form-group text-primary">
@@ -84,6 +84,6 @@
                 </div>
                 <input type="button" value="Registruj se" class="btn btn-primary btn-lg" onclick="proveraPodataka()">
             </form>
-        </div>
+        </div>--%>
     </body>
 </asp:Content>

@@ -24,16 +24,7 @@ namespace Banca_Bianca
                 Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
             }
-
-            //if (!IsPostBack)
-            //{
-            //    TextBox3.Attributes.Add("disabled","true");
-            //}
-            //else if (Session["tip"].Equals("Z"))
-            //{
-
-            //}
-            }
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -43,7 +34,8 @@ namespace Banca_Bianca
             SqlDataAdapter da = new SqlDataAdapter(naredba, Konekcija.Connect());
             DataTable korisnik = new DataTable();
             da.Fill(korisnik);
-            if (korisnik.Rows.Count != 0) {
+            if (korisnik.Rows.Count != 0)
+            {
                 //Session["ime_jmbg"]= korisnik.Rows[0]["Ime"].ToString();
                 //Session["prezime_jmbg"] = korisnik.Rows[0]["Prezime"].ToString();
                 TextBox2.Text = korisnik.Rows[0]["Ime"].ToString();
@@ -72,10 +64,7 @@ namespace Banca_Bianca
 
 
             }
-
-            
         }
-
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -88,27 +77,10 @@ namespace Banca_Bianca
                 TextBox3.Text = novi[DropDownList1.SelectedValue];
 
             }
-
             else
             {
-
                 TextBox3.Text = "";
-
-
-            }  
-            //TextBox2.Text = Session["ime_jmbg"].ToString();
-            //TextBox4.Text = Session["prezime_jmbg"].ToString();
-            //string naredba2 = "select Naziv_proizvoda, Id_proizvoda FROM Proizvodi";
-            //SqlDataAdapter da1 = new SqlDataAdapter(naredba1, Konekcija.Connect());
-            //DataTable proizvodi = new DataTable();
-            //da1.Fill(proizvodi);
-            //DropDownList1.DataSource = proizvodi;
-            //DropDownList1.DataTextField = "Naziv_proizvoda";
-            //DropDownList1.DataValueField = "Id_proizvoda";
-            //DropDownList1.DataBind();
-
-            //if (DropDownList1.SelectedValue)
-            //TextBox3.Text=
+            }
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -120,14 +92,14 @@ namespace Banca_Bianca
             double glavnica = Convert.ToDouble(TextBox5.Text);
             double period_otplate = Convert.ToDouble(TextBox6.Text);
 
-            TextBox7.Text = Convert.ToString(glavnica+((glavnica*period_otplate/12)*kamata)/100);
-            TextBox8.Text = Convert.ToString((glavnica + ((glavnica * period_otplate / 12) * kamata) / 100)/period_otplate);
+            TextBox7.Text = Convert.ToString(glavnica + ((glavnica * period_otplate / 12) * kamata) / 100);
+            TextBox8.Text = Convert.ToString((glavnica + ((glavnica * period_otplate / 12) * kamata) / 100) / period_otplate);
 
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-          //  string vrsta_kredita = DropDownList1.DataValueField.ToString();
+            //  string vrsta_kredita = DropDownList1.DataValueField.ToString();
             string vrsta_kredita = DropDownList1.SelectedValue;
             double glavnica = double.Parse(TextBox5.Text);
             double kamata = double.Parse(TextBox3.Text);
@@ -137,7 +109,7 @@ namespace Banca_Bianca
             double mesecna_rata = double.Parse(TextBox8.Text);
             int id_klijenta = int.Parse(Session["id_klijenta"].ToString());
             int id_zaposlenog = int.Parse(Session["Id_zaposlenog"].ToString());
-           // string id_zaposlenog1 = Session["Id_zaposlenog"].ToString();
+            // string id_zaposlenog1 = Session["Id_zaposlenog"].ToString();
             StringBuilder Naredba = new StringBuilder("INSERT INTO ");
             Naredba.Append(" Partija_kredita(");
             Naredba.Append("Id_zaposlenog, datum, Id_klijenta, Vrsta_kredita, Glavnica, Period_otplate, Kamata, Total_iznos, Mesecna_rata )");
@@ -147,7 +119,7 @@ namespace Banca_Bianca
             conn.Open();
             Komanda1.ExecuteNonQuery();
             conn.Close();
-            odobren.InnerHtml="Kredit je uspesno odobren";
+            odobren.InnerHtml = "Kredit je uspesno odobren";
         }
     }
 }

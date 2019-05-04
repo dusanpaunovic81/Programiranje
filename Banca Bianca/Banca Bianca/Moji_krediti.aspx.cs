@@ -42,17 +42,10 @@ namespace Banca_Bianca
                 DataTable pregledUplata = new DataTable();
                 da3.Fill(pregledUplata);
 
-
-
                 GridView2.DataSource = pregledKredita;
                 GridView2.DataBind();
-
-
-
                 GridView3.DataSource = pregledUplata;
                 GridView3.DataBind();
-
-                //double osnovica = pregledKredita.Rows[0]["glavnica"]
                 int bruplata = pregledUplata.Rows.Count;
                 int brkredita = pregledKredita.Rows.Count;
                 IDictionary<int, double> krediti = new Dictionary<int, double>();
@@ -60,11 +53,7 @@ namespace Banca_Bianca
                 {
                     krediti.Add(Convert.ToInt32(pregledKredita.Rows[i]["Partija"]), Convert.ToDouble(pregledKredita.Rows[i]["Total"]));
                 }
-                //double[] PeriodOtplate = new double[pregledKredita.Rows.Count];
-                //for (int i = 0; i < PeriodOtplate.Length; i++)
-                //{
-                //    PeriodOtplate[i] = Convert.ToInt32(pregledKredita.Rows[i]["PeriodOtplate"]) - bruplata;
-                //}
+               
                 for (int i = 0; i < bruplata; i++)
                 {
                     for (int j = 0; j < krediti.Count; j++)

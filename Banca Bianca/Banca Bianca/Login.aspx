@@ -6,11 +6,7 @@
     <link href="Content/StyleSheet1.css" rel="stylesheet" />
    
     <div>
-        <!--  <form action="/action_page.php">  -->
-            <%--<input type="text" placeholder="Username" name="username">
-            <input type="password" placeholder="Password" name="psw">
-            <input type="submit" value="Uloguj se" class="btn btn-primary btn-lg" onclick="proveraPodataka()">--%>
-      <%--  </form>--%>
+       
         <asp:Label ID="Label1" runat="server" Text="Username:"></asp:Label>
         <asp:TextBox ID="TextBox1" runat="server" placeholder="Username"></asp:TextBox>
         <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
