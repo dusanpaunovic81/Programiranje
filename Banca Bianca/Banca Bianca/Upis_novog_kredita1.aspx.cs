@@ -24,19 +24,30 @@ namespace Banca_Bianca
                 Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
             }
-            else if (Session["tip"].Equals("Z"))
-            {
 
-            }
+            //if (!IsPostBack)
+            //{
+            //    TextBox3.Attributes.Add("disabled","true");
+            //}
+            //else if (Session["tip"].Equals("Z"))
+            //{
+
+            //}
             }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+
             string naredba = "select * FROM Kontakti WHERE JMBG='" + TextBox1.Text + "'";
             SqlDataAdapter da = new SqlDataAdapter(naredba, Konekcija.Connect());
             DataTable korisnik = new DataTable();
             da.Fill(korisnik);
             if (korisnik.Rows.Count != 0) {
+                //Session["ime_jmbg"]= korisnik.Rows[0]["Ime"].ToString();
+                //Session["prezime_jmbg"] = korisnik.Rows[0]["Prezime"].ToString();
+                TextBox2.Text = korisnik.Rows[0]["Ime"].ToString();
+                TextBox4.Text = korisnik.Rows[0]["Prezime"].ToString();
                 Session["id_klijenta"] = korisnik.Rows[0][0].ToString();
                 string naredba1 = "select Naziv_proizvoda, Id_proizvoda,Kamata FROM Proizvodi";
                 SqlDataAdapter da1 = new SqlDataAdapter(naredba1, Konekcija.Connect());
@@ -46,6 +57,8 @@ namespace Banca_Bianca
                 DropDownList1.DataTextField = "Naziv_proizvoda";
                 DropDownList1.DataValueField = "Id_proizvoda";
                 DropDownList1.DataBind();
+
+                DropDownList1.Items.Insert(0, new ListItem("", ""));
 
                 for (int i = 0; i < proizvodi.Rows.Count; i++)
                 {
@@ -68,9 +81,23 @@ namespace Banca_Bianca
 
             Dictionary<string, string> novi = (Dictionary<string, string>)Session["recnik"];
 
-               string proba = novi[DropDownList1.SelectedValue];
-               TextBox3.Text = novi[DropDownList1.SelectedValue];
+            if (DropDownList1.SelectedValue != "")
+            {
 
+                string proba = novi[DropDownList1.SelectedValue];
+                TextBox3.Text = novi[DropDownList1.SelectedValue];
+
+            }
+
+            else
+            {
+
+                TextBox3.Text = "";
+
+
+            }  
+            //TextBox2.Text = Session["ime_jmbg"].ToString();
+            //TextBox4.Text = Session["prezime_jmbg"].ToString();
             //string naredba2 = "select Naziv_proizvoda, Id_proizvoda FROM Proizvodi";
             //SqlDataAdapter da1 = new SqlDataAdapter(naredba1, Konekcija.Connect());
             //DataTable proizvodi = new DataTable();
@@ -120,7 +147,7 @@ namespace Banca_Bianca
             conn.Open();
             Komanda1.ExecuteNonQuery();
             conn.Close();
-            TextBox9.Text = "Kredit je uspesno odobren";
+            odobren.InnerHtml="Kredit je uspesno odobren";
         }
     }
 }

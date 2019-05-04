@@ -17,6 +17,10 @@ function proveriLozinku() {
         document.getElementById("lozinka1").style.backgroundColor = "#84e184";
     }
 }
+//document.getElementbyId("ContentPlaceHolder1_TextBox3").disabled = true;
+
+
+
 
 //function proveriemail(){
 //    //var uzorakEmail = /^\w+([\.-]?\w+)*@\w+([\.]?\w+)*\.[a-zA-Z]{2,3}$/;

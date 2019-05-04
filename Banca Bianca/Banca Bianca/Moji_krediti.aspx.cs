@@ -26,58 +26,76 @@ namespace Banca_Bianca
             }
             else
             {
-
-                SqlConnection conn = Konekcija.Connect();
-                SqlDataAdapter da = new SqlDataAdapter("select * from Kontakti", conn);
-
-                DataTable podaci = new DataTable();
-                da.Fill(podaci);
-
-                GridView1.DataSource = podaci;
+                string naredba4 = "select * FROM Kontakti WHERE JMBG='" + Session["JMBG"] + "'";
+                SqlDataAdapter da4 = new SqlDataAdapter(naredba4, Konekcija.Connect());
+                DataTable korisnik4 = new DataTable();
+                da4.Fill(korisnik4);
+                GridView1.DataSource = korisnik4;
                 GridView1.DataBind();
-                odgovor.Visible = false;
+
+                string naredba2 = "EXECUTE PregledUserKredita " + korisnik4.Rows[0]["Id_racuna"].ToString();
+                SqlDataAdapter da2 = new SqlDataAdapter(naredba2, Konekcija.Connect());
+                DataTable pregledKredita = new DataTable();
+                da2.Fill(pregledKredita);
+                string naredba3 = "EXECUTE PregledUplata " + korisnik4.Rows[0]["Id_racuna"].ToString();
+                SqlDataAdapter da3 = new SqlDataAdapter(naredba3, Konekcija.Connect());
+                DataTable pregledUplata = new DataTable();
+                da3.Fill(pregledUplata);
+
+
+
+                GridView2.DataSource = pregledKredita;
+                GridView2.DataBind();
+
+
+
+                GridView3.DataSource = pregledUplata;
+                GridView3.DataBind();
+
+                //double osnovica = pregledKredita.Rows[0]["glavnica"]
+                int bruplata = pregledUplata.Rows.Count;
+                int brkredita = pregledKredita.Rows.Count;
+                IDictionary<int, double> krediti = new Dictionary<int, double>();
+                for (int i = 0; i < brkredita; i++)
+                {
+                    krediti.Add(Convert.ToInt32(pregledKredita.Rows[i]["Partija"]), Convert.ToDouble(pregledKredita.Rows[i]["Total"]));
+                }
+                //double[] PeriodOtplate = new double[pregledKredita.Rows.Count];
+                //for (int i = 0; i < PeriodOtplate.Length; i++)
+                //{
+                //    PeriodOtplate[i] = Convert.ToInt32(pregledKredita.Rows[i]["PeriodOtplate"]) - bruplata;
+                //}
+                for (int i = 0; i < bruplata; i++)
+                {
+                    for (int j = 0; j < krediti.Count; j++)
+                        if (Convert.ToInt32(pregledUplata.Rows[i]["id_partije"]) == krediti.ElementAt(j).Key)
+                            krediti[krediti.ElementAt(j).Key] = krediti[krediti.ElementAt(j).Key] - Convert.ToDouble(pregledUplata.Rows[i]["Iznos_uplate"]);
+
+                }
+                otplate.InnerHtml = "<table border='1'><tr><th>Naziv kredita</th><th>Preostali iznos za otplatu</th></tr>";
+                for (int i = 0; i < krediti.Count; i++)
+                {
+                    string naredba5 = "Select Naziv_proizvoda from Proizvodi " +
+                        "inner join Partija_kredita on Proizvodi.Id_proizvoda = Partija_kredita.Vrsta_kredita" +
+                        " where Id_partije ='" + krediti.ElementAt(i).Key + "'";
+                    SqlDataAdapter da5 = new SqlDataAdapter(naredba5, Konekcija.Connect());
+                    DataTable nazivi_kredita = new DataTable();
+                    da5.Fill(nazivi_kredita);
+
+                    otplate.InnerHtml += "<tr><td>" + nazivi_kredita.Rows[0]["Naziv_proizvoda"] + "</td>";
+                    otplate.InnerHtml += "<td>" + krediti[krediti.ElementAt(i).Key].ToString() + "</td></tr>";
+                    //Response.Write(nazivi_kredita.Rows[0]["Naziv_proizvoda"] + " - ");
+                    //Response.Write(krediti[krediti.ElementAt(i).Key].ToString() + "" + Environment.NewLine);
+                    //da5.Dispose();
+                    //nazivi_kredita.Clear();
+
+                }
+                otplate.InnerHtml += "</table>";
+
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-            string naredba = "select * FROM Kontakti WHERE JMBG='" + TextBox1.Text + "'";
-            SqlDataAdapter da = new SqlDataAdapter(naredba, Konekcija.Connect());
-            DataTable korisnik = new DataTable();
-            da.Fill(korisnik);
-
-            GridView2.DataSource = korisnik;
-            GridView2.DataBind();
-            odgovor.Visible = false;
-
-
-
-            //if (korisnik.Rows.Count != 0)
-            //{
-            //    Session["id_klijenta"] = korisnik.Rows[0][0].ToString();
-            //    string naredba1 = "select Naziv_proizvoda, Id_proizvoda,Kamata FROM Proizvodi";
-            //    SqlDataAdapter da1 = new SqlDataAdapter(naredba1, Konekcija.Connect());
-            //    DataTable proizvodi = new DataTable();
-            //    da1.Fill(proizvodi);
-            //    DropDownList1.DataSource = proizvodi;
-            //    DropDownList1.DataTextField = "Naziv_proizvoda";
-            //    DropDownList1.DataValueField = "Id_proizvoda";
-            //    DropDownList1.DataBind();
-
-            //    for (int i = 0; i < proizvodi.Rows.Count; i++)
-            //    {
-            //        string prvi = proizvodi.Rows[i][1].ToString();
-            //        string drugi = proizvodi.Rows[i][2].ToString();
-            //        recnik.Add(proizvodi.Rows[i][1].ToString(), proizvodi.Rows[i][2].ToString());
-            //        Session["recnik"] = recnik;
-
-
-            //    }
-
-
-
-            //}
-        }
+       
+        
     }
 }

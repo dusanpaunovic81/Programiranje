@@ -66,7 +66,7 @@
         <div class="form-group text-primary">
             <p class="h4">Pol</p>
             <label for="musko">Muški</label>
-            <input type="radio" name="pol" value="Muški" id="musko">
+            <input type="radio" name="pol" value="Muški" id="musko" runat="server">
             <label for="zensko">Ženski</label>
             <input type="radio" name="pol" value="Ženski" runat="server" id="zensko">
         </div>

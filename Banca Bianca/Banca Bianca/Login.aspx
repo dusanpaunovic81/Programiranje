@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
     <h2>Stranica za logovanje</h2>
-   
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
    
     <div>
         <!--  <form action="/action_page.php">  -->
