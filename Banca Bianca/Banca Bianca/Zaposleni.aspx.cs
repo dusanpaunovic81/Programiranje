@@ -15,14 +15,19 @@ namespace Banca_Bianca
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
-            {
-                Response.Redirect("Login.aspx");
-                Response.Write("Nemate ovlascenje za ovu stranicu!");
-                Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
+            if (Session["tip"].ToString() != "Z")
+            {
+
+                if (Session["tip"].ToString() != "A" || Session["tip"] == null)
+                {
+                    Response.Redirect("Login.aspx");
+                    Response.Write("Nemate ovlascenje za ovu stranicu!");
+                    Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+
+                }
             }
-           
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -37,6 +42,11 @@ namespace Banca_Bianca
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Uplata.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Update_podataka.aspx");
         }
     }
 }

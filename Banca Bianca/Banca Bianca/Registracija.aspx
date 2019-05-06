@@ -4,7 +4,7 @@
     <script src="Scripts/JavaScript.js">
        
     </script>
-
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <div class="login-container">
         <h3>Ukoliko već imate nalog, ulogujte se <a href="Login.aspx">ovde</a></h3>
 

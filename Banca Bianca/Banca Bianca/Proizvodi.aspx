@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Proizvodi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Proizvodi.aspx.cs" Inherits="Banca_Bianca.Proizvodi" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <h2><%: Title %>.</h2>
     <h2>Bankarski krediti Banca Bianca</h2>
     <div style="font-family:arial,helvetica,sans-serif;">

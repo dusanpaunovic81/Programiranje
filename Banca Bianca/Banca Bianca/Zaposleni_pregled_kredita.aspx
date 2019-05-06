@@ -3,11 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <asp:Label ID="Label2" runat="server" Text="Provera postojanja klijenta"></asp:Label><br />
     <asp:Label ID="Label1" runat="server" Text="Unesite JMBG:"></asp:Label>
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" class="btn btn-primary btn-lg" Text="Proveri" />
+    <div id="poruka" runat="server"></div>
     <br />
     <br />
     <asp:Label ID="Label3" runat="server" Text="Podaci o klijentu:"></asp:Label><br />

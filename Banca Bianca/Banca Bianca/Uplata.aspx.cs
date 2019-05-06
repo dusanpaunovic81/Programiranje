@@ -13,11 +13,22 @@ namespace Banca_Bianca
 {
     public partial class Uplata : System.Web.UI.Page
     {
+        
         Dictionary<string, string> recnik = new Dictionary<string, string>();
         protected void Page_Load(object sender, EventArgs e)
         {
+                if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
+                {
 
-        }
+                    if (Session["tip"].ToString() != "A" || Session["tip"] == null)
+                    {
+                        Response.Redirect("Login.aspx");
+                        Response.Write("Nemate ovlascenje za ovu stranicu!");
+                        Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+
+                    }
+                }
+            }
 
         protected void Button3_Click(object sender, EventArgs e)
         {

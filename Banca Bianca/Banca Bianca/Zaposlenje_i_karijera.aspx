@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Zaposlenje i Karijera" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Zaposlenje_i_karijera.aspx.cs" Inherits="Banca_Bianca.Zaposlenje_i_karijera" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <body>
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
+   <%-- <body>--%>
         <div style="font-family: arial,helvetica,sans-serif;">
             <h2>Zaposlenje i Karijera.</h2>
             <h3>Ovde svako može aplicirati za zaposlenje.</h3>
@@ -18,9 +19,9 @@
             Nakon procene profesionalnih kompetencija kandidati dobijaju informaciju o njihovom daljem
             <br />
             statusu (primljeni, ostaju u bazi za drugu poziciju, neprihvatljivi). Ovo je samo prvi korak....<br />
-            Zakoračite u svet mogućeg.<br />
+            Zakoračite u svet mogućeg.<br /><br /><br />
         </div>
-       
+       <strong>Aplicirajte za posao:</strong>   <a href="mailto:dusan.paunovic81@gmail.com">hr@Banca.com</a><br />
        <%-- <div>
             <form method="post" name="formaReg">
                 <div class="h1 text-center bg-primary text-light jumbotron rounded shadow-lg ">Aplicirajte za posao</div>
@@ -85,5 +86,5 @@
                 <input type="button" value="Registruj se" class="btn btn-primary btn-lg" onclick="proveraPodataka()">
             </form>
         </div>--%>
-    </body>
+    <%--</body>--%>
 </asp:Content>

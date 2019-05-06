@@ -18,9 +18,9 @@ namespace Banca_Bianca
             {
 
             
-            if (Session["tip"].ToString() == "A") { admin2.Visible = true;
-                //Response.Redirect("Admin2.aspx");
-            }
+            if (Session["tip"].ToString() == "A") { admin2.Visible = true; zaposleni.Visible = true;
+                    //Response.Redirect("Admin2.aspx");
+                }
             if (Session["tip"].ToString() == "Z") { zaposleni.Visible = true;
                 //Response.Redirect("Zaposleni.aspx");
             }

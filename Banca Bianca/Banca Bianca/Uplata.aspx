@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Uplatnica" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Uplata.aspx.cs" Inherits="Banca_Bianca.Uplata" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <asp:Label ID="Label1" runat="server" Text="Uplatnica"></asp:Label><br /><br />
 
     <asp:Label ID="Label5" runat="server" Text="Uplatilac"></asp:Label><br /><br />

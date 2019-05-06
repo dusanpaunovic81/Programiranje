@@ -17,12 +17,16 @@ namespace Banca_Bianca
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["tip"].ToString() != "Z")
+            if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
             {
-                Response.Redirect("Login.aspx");
-                Response.Write("Nemate ovlascenje za ovu stranicu!");
-                Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
+                if (Session["tip"].ToString() != "A" || Session["tip"] == null)
+                {
+                    Response.Redirect("Login.aspx");
+                    Response.Write("Nemate ovlascenje za ovu stranicu!");
+                    Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+
+                }
             }
         }
 
@@ -64,6 +68,11 @@ namespace Banca_Bianca
 
 
             }
+            else
+            {
+                korisnik_poruka.InnerHtml = "Korisnik ne postoji!!!";
+            }
+
         }
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {

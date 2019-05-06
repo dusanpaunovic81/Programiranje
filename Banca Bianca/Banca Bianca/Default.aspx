@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Banca_Bianca._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <div class="jumbotron">
         <h1>Banca Bianca</h1>
         <p class="lead">Jednostavnije svakodnevno bankarstvo, bez ograničenja.</p>

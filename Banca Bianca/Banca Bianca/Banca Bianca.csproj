@@ -108,11 +108,12 @@
     <Content Include=".gitignore" />
     <Content Include="Admin.aspx" />
     <Content Include="Admin2.aspx" />
+    <Content Include="Content\003.jpg" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Logout.aspx" />
     <Content Include="Scripts\JavaScript.js" />
     <Content Include="Uplata.aspx" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Update_podataka.aspx" />
     <Content Include="Upis_novog_kredita1.aspx" />
     <Content Include="Zaposleni.aspx" />
     <Content Include="Moji_krediti.aspx" />
@@ -205,12 +206,12 @@
     <Compile Include="Uplata.aspx.designer.cs">
       <DependentUpon>Uplata.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Update_podataka.aspx.cs">
+      <DependentUpon>Update_podataka.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Update_podataka.aspx.designer.cs">
+      <DependentUpon>Update_podataka.aspx</DependentUpon>
     </Compile>
     <Compile Include="Upis_novog_kredita1.aspx.cs">
       <DependentUpon>Upis_novog_kredita1.aspx</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Banca_Bianca.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+     <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <h2><%: Title %>.</h2>
     <h2>O nama...</h2>
    

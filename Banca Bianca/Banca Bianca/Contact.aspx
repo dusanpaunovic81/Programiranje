@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Banca_Bianca.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <h2><%: Title %>.</h2>
     <h3>Your contact page.</h3>
     <address>
