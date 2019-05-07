@@ -22,7 +22,7 @@ namespace Banca_Bianca
             {
                 //Response.Write("Nemate ovlascenje za ovu stranicu!");
                 //Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
-                Response.Redirect("Default.aspx?error=NemateOvlascenje");
+                Response.Redirect("Default.aspx?error=Nemate_Ovlašćenje_za_ovu_stranicu!");
             }
             else
             {

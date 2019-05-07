@@ -66,7 +66,7 @@ namespace Banca_Bianca
             else
             {
                 //vec postoji
-                Response.Write("Ima ga!!!");
+                Response.Write("Korisnik već postoji u bazi!!!");
             }
 
 

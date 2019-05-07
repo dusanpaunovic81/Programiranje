@@ -30,7 +30,7 @@ namespace Banca_Bianca
             else if (Session["tip"].ToString() != "A")
             {
                 //Response.Redirect("Login.aspx");
-                Response.Write("Nemate ovlascenje za ovu stranicu!");
+                Response.Write("Nemate ovlašćenje za ovu stranicu!");
                 Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
             }
@@ -61,7 +61,7 @@ namespace Banca_Bianca
             conn.Open();
             Komanda1.ExecuteNonQuery();
             conn.Close();
-            odobren.InnerHtml = "Status je uspesno promenjen u Zaposleni! ";
+            odobren.InnerHtml = "Status je uspešno promenjen u Zaposleni! ";
         }
     }
 }

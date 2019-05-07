@@ -111,6 +111,7 @@
     <Content Include="Content\003.jpg" />
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="Logout.aspx" />
+    <Content Include="Reset_lozinke.aspx" />
     <Content Include="Scripts\JavaScript.js" />
     <Content Include="Uplata.aspx" />
     <Content Include="Update_podataka.aspx" />
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reset_lozinke.aspx.cs">
+      <DependentUpon>Reset_lozinke.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reset_lozinke.aspx.designer.cs">
+      <DependentUpon>Reset_lozinke.aspx</DependentUpon>
     </Compile>
     <Compile Include="Uplata.aspx.cs">
       <DependentUpon>Uplata.aspx</DependentUpon>

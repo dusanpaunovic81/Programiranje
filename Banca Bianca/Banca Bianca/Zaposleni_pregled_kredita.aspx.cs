@@ -20,7 +20,7 @@ namespace Banca_Bianca
                 if (Session["tip"].ToString() != "A" || Session["tip"] == null)
                 {
                     Response.Redirect("Login.aspx");
-                    Response.Write("Nemate ovlascenje za ovu stranicu!");
+                    Response.Write("Nemate ovlašćenje za ovu stranicu!");
                     Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
                 }
@@ -30,13 +30,13 @@ namespace Banca_Bianca
             {
                 //Response.Write("Nemate ovlascenje za ovu stranicu!");
                 //Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
-                Response.Redirect("Default.aspx?error=NemateOvlascenje");
+                Response.Redirect("Default.aspx?error=NemateOvlašćenje");
             }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string naredba4 = "select * FROM Kontakti WHERE JMBG='" + TextBox1.Text + "'";
+            string naredba4 = ("select Id_racuna, Broj_racuna, Ime, Prezime, JMBG, Email, datum_rodj AS Datum_Rodjenja, Adresa, Mesto, Mobilni, Fiksni, Pol, Pozicija from Kontakti WHERE JMBG='" + TextBox1.Text + "'");
             SqlDataAdapter da4 = new SqlDataAdapter(naredba4, Konekcija.Connect());
             DataTable korisnik4 = new DataTable();
             da4.Fill(korisnik4);

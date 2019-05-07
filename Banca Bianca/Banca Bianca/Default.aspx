@@ -2,13 +2,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <link href="Content/StyleSheet1.css" rel="stylesheet" />
-    <div class="jumbotron">
+    <div class="jumbotron" style=" background-color:#f2f4f4; border:solid 1px; border-color:black;">
         <h1>Banca Bianca</h1>
         <p class="lead">Jednostavnije svakodnevno bankarstvo, bez ograničenja.</p>
         <p><a href="About.aspx" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
-    <div class="row">
+    <div class="row" >
         <div class="col-md-4">
             <h2>Keš krediti</h2>
             <p>

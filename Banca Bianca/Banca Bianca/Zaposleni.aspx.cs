@@ -22,7 +22,7 @@ namespace Banca_Bianca
                 if (Session["tip"].ToString() != "A" || Session["tip"] == null)
                 {
                     Response.Redirect("Login.aspx");
-                    Response.Write("Nemate ovlascenje za ovu stranicu!");
+                    Response.Write("Nemate ovlašćenje za ovu stranicu!");
                     Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
                 }

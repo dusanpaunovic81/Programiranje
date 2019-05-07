@@ -27,7 +27,7 @@ namespace Banca_Bianca
             da.Fill(korisnik);
             if (korisnik.Rows.Count == 0)
             {
-                Response.Write("Nema ga");
+                Response.Write("Korisnik ne postoji u bazi, molimo Vas da se registrujete!");
             }
             else
             {
@@ -37,7 +37,8 @@ namespace Banca_Bianca
                 da.Fill(korisnik);
                 if (korisnik.Rows.Count == 0)
                 {
-                    Response.Write("Los password");
+                    Response.Write("Loš password");
+                    los_pass.InnerHtml = "Loša lozinka! Ukoliko ste zaboravili lozinku možete je resetovati <a href = 'Reset_lozinke.aspx'>ovde</a>";
                 }
                 else
                 {
