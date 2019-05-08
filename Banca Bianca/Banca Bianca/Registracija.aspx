@@ -14,6 +14,7 @@
         <!--<form method="post" name="formaReg">-->
         <div class="h1 text-center bg-primary text-light jumbotron rounded shadow-lg "  style=" background-color:#f2f4f4; border:solid 1px; border-color:black;">Forma za registraciju</div>
        <%-- <div class="form-group text-primary">--%>
+        <div id="registracija" class="h2" runat="server"></div>
          <div class="h4 text-center bg-primary jumbotron rounded shadow-lg "  style=" background-color:#f2f4f4; border:solid 1px; border-color:black; width:400px;">
             <label for="Ime" class="h4">Ime(*)</label>
             <input type="text" name="Ime" id="Ime" class="form-control" placeholder="Ime" required autofocus>

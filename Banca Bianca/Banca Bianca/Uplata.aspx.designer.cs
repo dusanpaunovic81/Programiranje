@@ -22,13 +22,13 @@ namespace Banca_Bianca {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Label5 control.
+        /// uplata control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl uplata;
         
         /// <summary>
         /// Label4 control.
@@ -155,14 +155,5 @@ namespace Banca_Bianca {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
-        
-        /// <summary>
-        /// uplata control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl uplata;
     }
 }

@@ -19,7 +19,7 @@ namespace Banca_Bianca
         }
         protected void Session_Start(object sender, EventArgs e)
         {
-            //Session["tip"] = null;
+            Session["tip"] = "";
             //Session["Kontakti"] = "";
             //Session["ime"] = "";
             //Session["Last_date"] = "";

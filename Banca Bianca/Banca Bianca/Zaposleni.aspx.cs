@@ -16,16 +16,15 @@ namespace Banca_Bianca
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["tip"].ToString() != "Z")
+            if (Session["tip"].ToString() != "Z" && (Session["tip"].ToString() != "A" || Session["tip"] == null))
             {
 
-                if (Session["tip"].ToString() != "A" || Session["tip"] == null)
-                {
+               
                     Response.Redirect("Login.aspx");
                     Response.Write("Nemate ovlašćenje za ovu stranicu!");
                     Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
-                }
+                
             }
 
         }

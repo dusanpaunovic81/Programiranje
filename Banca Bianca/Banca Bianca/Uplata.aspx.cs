@@ -13,22 +13,20 @@ namespace Banca_Bianca
 {
     public partial class Uplata : System.Web.UI.Page
     {
-        
+
         Dictionary<string, string> recnik = new Dictionary<string, string>();
         protected void Page_Load(object sender, EventArgs e)
         {
-                if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
-                {
+            if (Session["tip"].ToString() != "Z" && (Session["tip"].ToString() != "A" || Session["tip"] == null))
+            {
 
-                    if (Session["tip"].ToString() != "A" || Session["tip"] == null)
-                    {
-                        Response.Redirect("Login.aspx");
-                        Response.Write("Nemate ovlašćenje za ovu stranicu!");
-                        Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+                Response.Redirect("Login.aspx");
+                Response.Write("Nemate ovlašćenje za ovu stranicu!");
+                Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
-                    }
-                }
+
             }
+        }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -41,7 +39,7 @@ namespace Banca_Bianca
             SqlDataAdapter da = new SqlDataAdapter(naredba, Konekcija.Connect());
             DataTable korisnik = new DataTable();
             da.Fill(korisnik);
-           
+
 
             if (korisnik.Rows.Count != 0)
             {
@@ -56,7 +54,7 @@ namespace Banca_Bianca
                 DropDownList1.DataTextField = "Id_partije";
                 DropDownList1.DataValueField = "Id_partije";
                 DropDownList1.DataBind();
-                for(int i = 0; i < partija1.Rows.Count; i++)
+                for (int i = 0; i < partija1.Rows.Count; i++)
                 {
                     recnik.Add(partija1.Rows[i]["Id_partije"].ToString(), partija1.Rows[i]["Naziv_proizvoda"].ToString());
 
@@ -64,7 +62,7 @@ namespace Banca_Bianca
 
                 Session["partije_kredita"] = recnik;
 
-              
+
             }
 
 

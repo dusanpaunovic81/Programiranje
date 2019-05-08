@@ -56,12 +56,13 @@ namespace Banca_Bianca
                 Naredba.Append("ime, prezime, JMBG, email, korisnicko_ime, Lozinka,  datum_rodj, ");
                 Naredba.Append(" Adresa, Mesto, Mobilni, Fiksni, Pol, Pozicija, login_date, login_time )");
                 Naredba.Append($" VALUES('{Ime}','{Prezime}','{JMBG}', '{email}','{korisnicko_ime}','{password}','{datum_rodj}','{Adresa}','{Mesto}','{Mobilni}','{Fiksni}','{Pol}','K', '{sad_d}','{sad_v}') ");
-                Response.Write(Naredba.ToString());
+                //Response.Write(Naredba.ToString());
                 SqlConnection conn = Konekcija.Connect();
                 SqlCommand Komanda = new SqlCommand(Naredba.ToString(), conn);
                 conn.Open();
                 Komanda.ExecuteNonQuery();
                 conn.Close();
+                registracija.InnerHtml = "Registracija je uspešno izvršena!";
             }
             else
             {

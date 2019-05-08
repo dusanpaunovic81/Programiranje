@@ -14,6 +14,7 @@ namespace Banca_Bianca
         Dictionary<string, string> recnik = new Dictionary<string, string>();
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (Session["tip"] == null)
             {
                 Response.Redirect("Login.aspx");
@@ -53,7 +54,7 @@ namespace Banca_Bianca
                 {
                     krediti.Add(Convert.ToInt32(pregledKredita.Rows[i]["Partija"]), Convert.ToDouble(pregledKredita.Rows[i]["Total"]));
                 }
-               
+
                 for (int i = 0; i < bruplata; i++)
                 {
                     for (int j = 0; j < krediti.Count; j++)
@@ -80,8 +81,15 @@ namespace Banca_Bianca
 
                 }
                 otplate.InnerHtml += "</table>";
-
+                if (krediti.Count == 0)
+                {
+                    Label4.Visible = false;
+                    Label5.Visible = false;
+                    Label6.Visible = false;
+                    otplate.Visible = false;
+                }
             }
+            
         }
 
        

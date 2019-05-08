@@ -13,6 +13,15 @@ namespace Banca_Bianca {
     public partial class Registracija {
         
         /// <summary>
+        /// registracija control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl registracija;
+        
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>

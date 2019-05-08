@@ -5,23 +5,23 @@
    
    <br />
     <br />
-    <asp:Label ID="Label3" runat="server" Text="Podaci o klijentu:"></asp:Label><br />
+    <asp:Label ID="Label3" Class="h2" runat="server" Text="Podaci o klijentu:"></asp:Label><br />
     <asp:GridView ID="GridView1" runat="server">
     </asp:GridView>
     <br />
     <br />
-    <asp:Label ID="Label4" runat="server" Text="Podaci o aktivnim kreditima:"></asp:Label><br />
+    <asp:Label ID="Label4" Class="h2" runat="server" Text="Podaci o aktivnim kreditima:"></asp:Label><br />
     <asp:GridView ID="GridView2" runat="server">
     </asp:GridView>
     <br />
     <br />
-    <asp:Label ID="Label6" runat="server" Text="Podaci o preostalom iznosu za likvidaciju partije kredita:"></asp:Label>
+    <asp:Label ID="Label6" Class="h2" runat="server" Text="Podaci o preostalom iznosu za likvidaciju partije kredita:"></asp:Label>
     <div id="otplate" runat="server">
     </div>
 
     <br />
     <br />
-    <asp:Label ID="Label5" runat="server" Text="Podaci o uplatama klijenta:"></asp:Label>
+    <asp:Label ID="Label5" Class="h2" runat="server" Text="Podaci o uplatama klijenta:"></asp:Label>
     <asp:GridView ID="GridView3" runat="server">
     </asp:GridView>
     <link href="Content/StyleSheet1.css" rel="stylesheet" />

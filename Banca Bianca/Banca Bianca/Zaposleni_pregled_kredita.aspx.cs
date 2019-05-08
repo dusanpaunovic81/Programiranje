@@ -14,24 +14,27 @@ namespace Banca_Bianca
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
+            if (Session["tip"].ToString() != "Z" && (Session["tip"].ToString() != "A" || Session["tip"] == null))
             {
 
-                if (Session["tip"].ToString() != "A" || Session["tip"] == null)
-                {
                     Response.Redirect("Login.aspx");
                     Response.Write("Nemate ovlašćenje za ovu stranicu!");
                     Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
-                }
+              
             }
 
-            else if (Session["tip"].ToString() != "Z")
-            {
-                //Response.Write("Nemate ovlascenje za ovu stranicu!");
-                //Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
-                Response.Redirect("Default.aspx?error=NemateOvlašćenje");
-            }
+            //else if (Session["tip"].ToString() != "Z" && )
+            //{
+            //    //Response.Write("Nemate ovlascenje za ovu stranicu!");
+            //    //Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
+            //    Response.Redirect("Default.aspx?error=NemateOvlašćenje");
+            //}
+            Label3.Visible = false;
+            Label4.Visible = false;
+            Label5.Visible = false;
+            Label6.Visible = false;
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -108,6 +111,10 @@ namespace Banca_Bianca
 
                 }
                 otplate.InnerHtml += "</table>";
+                Label3.Visible = true;
+                Label4.Visible = true;
+                Label5.Visible = true;
+                Label6.Visible = true;
             }
         }
 

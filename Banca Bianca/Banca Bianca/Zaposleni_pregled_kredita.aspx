@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="Content/StyleSheet1.css" rel="stylesheet" />
+     <h2>Stranica za pregled kredita</h2>
    <%-- <div class="form-group text-primary">--%><br /><br />
     <asp:Label ID="Label2" class="h4" runat="server" Text="Provera postojanja klijenta"></asp:Label><br />
     <asp:Label ID="Label1" class="h4" runat="server" Text="Unesite JMBG:"></asp:Label>

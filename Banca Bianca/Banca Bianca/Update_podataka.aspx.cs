@@ -15,16 +15,14 @@ namespace Banca_Bianca
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["tip"].ToString() != "Z" || Session["tip"] == null)
+            if (Session["tip"].ToString() != "Z" && (Session["tip"].ToString() != "A" || Session["tip"] == null))
             {
 
-                if (Session["tip"].ToString() != "A" || Session["tip"] == null)
-                {
                     Response.Redirect("Login.aspx");
                     Response.Write("Nemate ovlašćenje za ovu stranicu!");
                     Response.Write("<a href=" + "'Login.aspx'" + ">VRATI SE</a>");
 
-                }
+               
             }
           
 
@@ -34,7 +32,7 @@ namespace Banca_Bianca
                 da.Fill(podaci);
                 GridView1.DataSource = podaci;
                 GridView1.DataBind();
-            
+            Label1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -61,6 +59,7 @@ namespace Banca_Bianca
                 TextBox7.Text = korisnik4.Rows[0]["Mobilni"].ToString();
                 TextBox8.Text = korisnik4.Rows[0]["Fiksni"].ToString();
                 TextBox9.Text = korisnik4.Rows[0]["Pol"].ToString();
+                Label1.Visible = true;
             }
         }
 

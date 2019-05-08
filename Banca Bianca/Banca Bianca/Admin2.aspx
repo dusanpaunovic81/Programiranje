@@ -8,7 +8,7 @@
     <br />
     <div class="container bg-light">
         <div class="row ">
-            <div class="col-4 jumbotron" style="padding:10px;width:300px;background-color:#f2f4f4;">
+            <div class="col-4 jumbotron" style="padding:10px;width:300px;background-color:#f2f4f4; border:solid 1px; border-color:black;">
                 <asp:Label ID="Label2" class="h4" runat="server" Text="Unesite JMBG:"></asp:Label>
                 <asp:TextBox ID="TextBox1" class="form-control" runat="server"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-lg" OnClick="Button1_Click" Text="Proveri" />

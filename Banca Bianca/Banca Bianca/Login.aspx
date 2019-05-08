@@ -12,7 +12,7 @@
         <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Username"></asp:TextBox>
     
         <asp:Label ID="Label2" runat="server" class="h4" Text="Password:"></asp:Label>
-        <asp:TextBox ID="TextBox2" class="form-control" runat="server" placeholder="Password"></asp:TextBox></div>
+        <asp:TextBox ID="TextBox2" type="password" class="form-control" runat="server" placeholder="Password"></asp:TextBox></div>
         <asp:Button ID="Button1" runat="server" Text="Uloguj se" OnClick="Button1_Click" class="btn btn-primary btn-lg" />
     
     <h2><div id="los_pass" runat="server"></div></h2>
